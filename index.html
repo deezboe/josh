@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      function Button1Click() {
+        let Button = document.getElementById("Button1")
+        let ButtonClassList = Button.classList
+        ButtonClassList.toggle("ButtonGreen")
+        ButtonClassList.toggle("ButtonRed")
+        if (ButtonClassList.contains("ButtonGreen")) {
+          Button.innerHTML = "green button";
+        } else {
+          Button.innerHTML = "red button";
+        }
+      }
+    </script>
+    <style>
+      .GameText {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+      }
+      .ButtonGreen {
+        background-color: #13ff0f;
+        width: 100px;
+        height: 50px;
+      }
+      .ButtonRed {
+        background-color: #fc0303;
+        width: 100px;
+        height: 50px;
+      }
+      .MoneyClicker {
+        position: absolute;
+        top: 60%;
+        left: 10%;
+        color: #13ff0f;
+      }
+    </style>
+    <h1>My first HTML </h1>
+    <p>html website</p>
+    <p><span style="color: blue;">blue</span> text</p>
+    <p><span style="color: red;">red </span> text</p>
+    <button id="Button1" class="ButtonGreen" onclick="Button1Click()">green button</button>
+    <p class="GameText">Play my games (Made in HTML)</p>
+    <a class="MoneyClicker"href="https://sites.google.com/qcsdstu.org/joshuahcoolhtml/money-clicker">Money Clicker</a>
+  </body>
+</html>
