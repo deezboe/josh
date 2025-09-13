@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html style="background-color: #fff066;">
+  <style>
+    .MoneyButton {
+      background-color: #43d42c;
+      height: 50px;
+      width: 100px;
+      position: absolute;
+      top: 50px;
+      right: 50%;
+      transform: translate(50%, 50%);
+    }
+    .CenterText {
+      text-align: center;
+    }
+  </style>
+  <script>
+    let Money = 0
+    function ClickButton1() {
+      let MoneyText = document.getElementById("MoneyVis")
+      Money += 1
+      MoneyText.innerHTML = Money + " dollers";
+    }
+  </script>
+  <button class="MoneyButton" onclick="ClickButton1()">Money</button>
+  <h2 class="CenterText" id="MoneyVis">0 doller</h2>
+</html>
